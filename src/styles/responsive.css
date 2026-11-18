@@ -1,0 +1,132 @@
+/* Tablet */
+@media (max-width: 1024px){
+  .container{width:min(100% - 48px,900px)}
+  .dental-hero,.plumb-hero-grid{gap:35px}
+  .dental-hero-visual{height:420px}
+  .dental-services{gap:45px}
+  .dental-about-grid,.plumb-why-grid{gap:50px}
+  .plumb-service-grid{grid-template-columns:repeat(2,1fr)}
+  .plumb-service-card{min-height:235px}
+  .plumb-review-inner{gap:55px}
+  .quote-grid{gap:45px}
+  .concepts{grid-template-columns:.65fr 1fr 1fr;gap:15px}
+  .concept-image{height:215px}
+}
+/* Mobile navigation and stacked layouts */
+@media (max-width: 760px){
+  html{scroll-padding-top:72px}
+  .container{width:calc(100% - 40px)}
+  .section-pad{padding-block:72px}
+  .mobile-menu-toggle{display:grid;place-items:center}
+  .dental-nav,.plumb-nav{height:72px}
+  .dental-nav-links,.plumb-links{display:none;position:absolute;top:72px;left:0;right:0;background:#fbfcf9;padding:18px 22px 24px;box-shadow:0 15px 25px #102b2014;flex-direction:column;align-items:stretch;gap:0}
+  .dental-nav-links.is-open,.plumb-links.is-open{display:flex}
+  .dental-nav-links>a:not(.nav-appointment),.plumb-links>a:not(.plumb-call){padding:14px 4px;border-bottom:1px solid #e9eee9;font-size:13px}
+  .nav-appointment,.plumb-call{justify-content:center;margin-top:14px;min-height:46px}
+  .plumb-links{background:#172d36}
+  .plumb-links>a:not(.plumb-call){color:#fff!important;border-color:#34464c}
+  .showcase-nav{height:70px}
+  .showcase-nav>span{font-size:7px}
+  .showcase-hero{grid-template-columns:1fr;gap:35px;padding-block:60px 45px}
+  .showcase-copy h1{font-size:clamp(53px,13vw,70px);letter-spacing:-3px}
+  .showcase-copy>p{font-size:14px}
+  .showcase-art{height:340px;max-width:520px;width:100%;margin:auto}
+  .art-card{height:280px}
+  .art-dental{width:58%;left:0}
+  .art-plumb{width:58%;right:0}
+  .art-dental-title{margin-top:55px}
+  .art-plumb-title{margin-top:58px}
+  .concepts{grid-template-columns:1fr 1fr;gap:14px;padding-block:35px 65px}
+  .concept-heading{grid-column:1/-1}
+  .concept-heading h2{font-size:30px}
+  .concept-image{height:190px}
+  .mini-dental strong,.mini-plumb strong{font-size:25px}
+  .concept-card{padding:11px}
+  .concept-bottom h3{font-size:14px}
+  .concept-bottom p{font-size:10px}
+  .round-arrow{width:31px;height:31px;flex-shrink:0}
+  .showcase-footer{font-size:7px;letter-spacing:1px}
+  .dental-hero,.plumb-hero-grid{grid-template-columns:1fr;gap:40px;padding-block:55px 65px}
+  .dental-hero h1,.plumb-hero h1{font-size:clamp(52px,12vw,72px);letter-spacing:-3px}
+  .dental-hero-copy>p,.plumb-hero-copy>p{font-size:14px}
+  .dental-hero-visual{height:390px;margin-left:20px}
+  .hero-image-tag{left:-20px;bottom:18px;padding:12px}
+  .hero-side-note{right:-15px}
+  .proof-grid,.plumb-stat-grid{grid-template-columns:1fr 1fr;row-gap:20px;padding-block:24px}
+  .proof-grid>div,.plumb-stat-grid>div{padding:0 10px;border-right:0}
+  .proof-grid>div:nth-child(odd),.plumb-stat-grid>div:nth-child(odd){border-right:1px solid #d7e2da}
+  .proof-grid>div:first-child,.plumb-stat-grid>div:first-child{padding-left:10px}
+  .proof-grid strong,.plumb-stat-grid strong{font-size:23px}
+  .dental-services{grid-template-columns:1fr;gap:35px}
+  .dental-services .section-heading h2{font-size:40px}
+  .dental-about{padding-block:70px}
+  .dental-about-grid,.plumb-why-grid{grid-template-columns:1fr;gap:45px}
+  .about-image{height:350px;margin-right:15px}
+  .about-stamp{width:105px;height:105px;right:-15px;font-size:8px}
+  .about-copy h2,.why-copy h2{font-size:39px}
+  .review-inner{grid-template-columns:1fr;gap:30px}
+  .review-card{padding:28px 24px}
+  .review-card blockquote{font-size:19px}
+  .dental-cta-inner{display:grid;gap:25px}
+  .dental-cta h2{font-size:37px}
+  .cta-actions{width:100%}
+  .dental-contact-strip,.plumb-bottom-info{grid-template-columns:1fr;gap:18px;padding-block:25px}
+  .site-footer{padding:35px 20px;grid-template-columns:1fr;gap:14px}
+  .footer-links{justify-content:flex-start;flex-wrap:wrap}
+  .site-footer>small{grid-column:auto}
+  .topline-inner{height:30px}
+  .topline-inner span:last-child{display:none}
+  .plumb-hero-image{height:350px;margin-left:18px}
+  .emergency-card{left:-18px;min-width:250px}
+  .plumb-actions{flex-wrap:wrap}
+  .plumb-hero-assurance{gap:14px;flex-wrap:wrap}
+  .plumb-section-top{display:block}
+  .plumb-dark-link{margin-top:20px}
+  .plumb-service-grid{grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+  .plumb-service-card{padding:19px 15px;min-height:260px}
+  .plumb-service-card h3{font-size:14px}
+  .plumb-service-card p{font-size:10px}
+  .why-photo{height:340px}
+  .work-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .work-item{height:190px}
+  .work-large{grid-column:1/-1;height:230px}
+  .plumb-review-inner{grid-template-columns:1fr;gap:28px}
+  .plumb-review{padding-block:65px}
+  .plumb-quote blockquote{font-size:20px}
+  .quote-grid{grid-template-columns:1fr;gap:35px}
+  .plumb-quote-section{padding-block:70px}
+  .quote-form{padding:24px 19px;grid-template-columns:1fr;gap:15px}
+  .form-heading,.quote-form label:nth-of-type(4),.form-submit,.form-note{grid-column:1}
+}
+/* Small phones */
+@media (max-width: 420px){
+  .container{width:calc(100% - 32px)}
+  .showcase-nav>span{display:none}
+  .showcase-art{height:290px}
+  .art-card{height:245px;padding:18px}
+  .art-dental-title,.art-plumb-title{font-size:25px;margin-top:48px}
+  .art-circle{width:40px;height:40px;right:12px;top:75px}
+  .concepts{grid-template-columns:1fr}
+  .concept-heading{grid-column:auto}
+  .concept-image{height:220px}
+  .concept-card{padding:14px}
+  .dental-hero-visual{height:320px}
+  .hero-actions{align-items:flex-start;flex-direction:column;gap:18px}
+  .dental-hero h1,.plumb-hero h1{font-size:51px}
+  .proof-grid span,.plumb-stat-grid span{font-size:10px}
+  .treatment-row{grid-template-columns:25px 1fr 20px;gap:10px}
+  .treatment-row h3{font-size:14px}
+  .treatment-row p{font-size:10px}
+  .plumb-service-grid{grid-template-columns:1fr}
+  .plumb-service-card{min-height:0}
+  .plumb-service-card p{min-height:0}
+  .plumb-hero-image{height:290px}
+  .plumb-actions{align-items:stretch;flex-direction:column}
+  .plumb-actions>*{justify-content:center}
+  .plumb-hero-assurance{display:grid}
+  .work-grid{grid-template-columns:1fr}
+  .work-large{grid-column:auto}
+  .work-item,.work-large{height:220px}
+  .dental-cta h2{font-size:33px}
+  .btn{width:100%}
+}
